@@ -6,7 +6,7 @@ use std::io::{self, BufRead};
 use std::path::Path;
 use std::collections::HashMap;
 fn main()  {
-    if let Ok(lines) = read_lines("wordlist.txt") {
+    if let Ok(lines) = read_lines("/Users/Paco/.scripts/wordlist.txt") {
         let mut words = HashMap::new();
         for line in lines {
             if let Ok(ip) = line {
